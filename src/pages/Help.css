@@ -1,0 +1,341 @@
+.help-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--background-primary) 0%, var(--background-secondary) 100%);
+}
+
+.help-gradient {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 4px 0 0 0;
+}
+
+.categories-container {
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.category-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  position: relative;
+}
+
+.category-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.category-button.active {
+  background: var(--primary-color);
+  color: var(--text-primary);
+  border-color: var(--primary-color);
+}
+
+.category-badge {
+  background: #FFCA28;
+  border-radius: 10px;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: 4px;
+}
+
+.content {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.emergency-section {
+  margin-bottom: 24px;
+}
+
+.emergency-card {
+  display: flex;
+  align-items: center;
+  background: rgba(229, 57, 53, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(229, 57, 53, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.emergency-card:hover {
+  background: rgba(229, 57, 53, 0.15);
+  transform: translateY(-2px);
+}
+
+.emergency-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background: rgba(229, 57, 53, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.emergency-info {
+  flex: 1;
+}
+
+.emergency-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 2px 0;
+}
+
+.emergency-number {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.availability-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.availability-badge.available {
+  background: var(--success-color);
+}
+
+.availability-badge.busy {
+  background: #F44336;
+}
+
+.roadside-section {
+  margin-bottom: 24px;
+}
+
+.service-card {
+  background: var(--card-background);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.service-header {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.service-icon-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background: rgba(33, 150, 243, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.service-main-info {
+  flex: 1;
+}
+
+.service-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 2px 0;
+}
+
+.service-specialty {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0 0 8px 0;
+}
+
+.service-metrics {
+  display: flex;
+  gap: 16px;
+}
+
+.service-metric {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.service-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.service-tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: var(--text-primary);
+}
+
+.service-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.call-service-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(76, 175, 80, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  color: #4CAF50;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.call-service-button:hover {
+  background: rgba(76, 175, 80, 0.3);
+}
+
+.request-service-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--primary-color);
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.request-service-button:hover {
+  background: #D32F2F;
+}
+
+.chat-section {
+  margin-bottom: 24px;
+}
+
+.chat-card {
+  display: flex;
+  align-items: center;
+  background: var(--card-background);
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.chat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background: rgba(33, 150, 243, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.chat-info {
+  flex: 1;
+}
+
+.chat-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 4px 0;
+}
+
+.chat-description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.start-chat-button {
+  background: var(--info-color);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-chat-button:hover {
+  background: #1976D2;
+}
+
+@media (max-width: 768px) {
+  .help-gradient {
+    padding: 16px;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+}

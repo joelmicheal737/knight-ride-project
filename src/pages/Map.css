@@ -1,0 +1,274 @@
+.map-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--background-primary) 0%, var(--background-secondary) 100%);
+}
+
+.map-gradient {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 4px 0 0 0;
+}
+
+.search-container {
+  margin-bottom: 16px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+}
+
+.search-input {
+  flex: 1;
+  margin-left: 12px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.filter-icon {
+  margin-left: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-icon:hover {
+  background: rgba(229, 57, 53, 0.1);
+}
+
+.map-placeholder-container {
+  margin-bottom: 16px;
+  border-radius: 16px;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(229, 57, 53, 0.1) 0%, rgba(229, 57, 53, 0.05) 100%);
+}
+
+.map-placeholder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 8px 0 0 0;
+}
+
+.map-subtext {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 4px 0 0 0;
+}
+
+.filters-container {
+  margin-bottom: 16px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.filter-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.filter-button.active {
+  background: var(--primary-color);
+  color: var(--text-primary);
+  border-color: var(--primary-color);
+}
+
+.services-container {
+  flex: 1;
+}
+
+.services-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-card {
+  background: var(--card-background);
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.service-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.service-info {
+  flex: 1;
+}
+
+.service-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 2px 0;
+}
+
+.service-address {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.service-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.call-button,
+.navigate-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.call-button {
+  background: rgba(76, 175, 80, 0.2);
+}
+
+.call-button:hover {
+  background: rgba(76, 175, 80, 0.3);
+}
+
+.navigate-button {
+  background: var(--primary-color);
+}
+
+.navigate-button:hover {
+  background: #D32F2F;
+}
+
+.service-details {
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+}
+
+.service-metrics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metric {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.status-badge.open {
+  background: var(--success-color);
+}
+
+.status-badge.closed {
+  background: #F44336;
+}
+
+@media (max-width: 768px) {
+  .map-gradient {
+    padding: 16px;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+  
+  .map-placeholder-container {
+    height: 150px;
+  }
+}

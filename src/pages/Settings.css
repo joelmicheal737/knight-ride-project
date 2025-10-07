@@ -1,0 +1,313 @@
+.settings-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--background-primary) 0%, var(--background-secondary) 100%);
+}
+
+.settings-gradient {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 4px 0 0 0;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.add-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background: rgba(229, 57, 53, 0.2);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-button:hover {
+  background: rgba(229, 57, 53, 0.3);
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background: var(--card-background);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 4px 0;
+}
+
+.profile-phone {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0 0 2px 0;
+}
+
+.profile-email {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.edit-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: rgba(229, 57, 53, 0.2);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-button:hover {
+  background: rgba(229, 57, 53, 0.3);
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: var(--card-background);
+  margin-bottom: 2px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.setting-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.setting-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.setting-content {
+  flex: 1;
+}
+
+.setting-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 2px 0;
+}
+
+.setting-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--accent-color);
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--text-secondary);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: var(--text-primary);
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  background: var(--card-background);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 2px 0;
+}
+
+.contact-phone {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0 0 2px 0;
+}
+
+.contact-relation {
+  font-size: 12px;
+  color: #FFCA28;
+  margin: 0;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.contact-action {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-action:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-action.edit:hover {
+  background: rgba(33, 150, 243, 0.2);
+}
+
+.contact-action.delete:hover {
+  background: rgba(244, 67, 54, 0.2);
+}
+
+.app-info {
+  text-align: center;
+  padding: 24px 0;
+  margin-bottom: 32px;
+}
+
+.app-info-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 4px 0;
+}
+
+.app-info-subtext {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .settings-gradient {
+    padding: 16px;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+  
+  .profile-card {
+    padding: 16px;
+  }
+  
+  .profile-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+}
